@@ -39,13 +39,12 @@ public class Interaction : MonoBehaviour
                     SetPromptText();
                 }
             }
-        }
-
-        else
-        {
-            curInteractGameObject = null;
-            curInteractable=null;
-            promptText.gameObject.SetActive(false);
+            else
+            {
+                curInteractGameObject = null;
+                curInteractable = null;
+                promptText.gameObject.SetActive(false);
+            }
         }
     }
 
